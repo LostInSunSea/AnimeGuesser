@@ -21,7 +21,6 @@
   </div>
   <div class='column'>
     <div class='card' :class="popularityColor">
-      {{ checkPopularity() }}
       <FontAwesomeIcon v-if="popArr == 'higher'" class="icon" icon="fa-arrow-up" />
       <FontAwesomeIcon v-if="popArr == 'lower'" class="icon" icon="fa-arrow-down" />
     </div>
@@ -116,8 +115,9 @@ function checkPopularity() {
       popArr.value = 'higher';
     }
   }
-  return props.guess.popularity;
 }
+
+checkPopularity();
 
 // functions for source card
 function checkSource() {

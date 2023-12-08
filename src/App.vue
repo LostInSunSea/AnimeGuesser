@@ -2,7 +2,7 @@
   <div class="page">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">How To Play</router-link>
     </nav>
     <router-view />
   </div>
